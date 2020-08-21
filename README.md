@@ -17,7 +17,7 @@ font.family:  Apple SD Gothic Neo
 
 axes.unicode_minus: False
 
-
+~~~
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
@@ -30,7 +30,7 @@ plt.title('시간별 가격 추이')
 font_list = fm.findSystemFonts(fontpaths=None, fontext='ttf')
 f = [f.name for f in fm.fontManager.ttflist]
 [(f.name,f.fname) for f in fm.fontManager.ttflist if 'Apple' in f.name]
-
+~~~
 
 
 
