@@ -18,6 +18,23 @@ font.family:  Apple SD Gothic Neo
 axes.unicode_minus: False
 
 
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+import numpy as np
+data = np.random.randint(-100,100,50).cumsum()
+
+plt.plot(range(50), data, 'r')
+plt.title('시간별 가격 추이')
+
+font_list = fm.findSystemFonts(fontpaths=None, fontext='ttf')
+f = [f.name for f in fm.fontManager.ttflist]
+[(f.name,f.fname) for f in fm.fontManager.ttflist if 'Apple' in f.name]
+
+
+
+
+
 git 사용방법
 
 참고 사이트 https://rogerdudler.github.io/git-guide/index.ko.html
