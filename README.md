@@ -22,9 +22,15 @@ git 사용방법
 
 참고 사이트 https://rogerdudler.github.io/git-guide/index.ko.html
 
+
 git init
+
 git clone /로컬/저장소/경로
+
 git add <파일 이름>
+
 git commit -m "이번 확정본에 대한 설명"
+
 git push origin master
+
 git pull
