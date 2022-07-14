@@ -53,51 +53,7 @@ git push origin master
 git pull
 
 
-#%%
 
-class A():
-    def __init__(self, pos):
-        self.pos = pos
-        self.b = 0
-
-    def func0(self):
-        self.pos += 1
-        print("A: ", self.pos)
-
-    def func(self):
-        self.b = B(self.pos)
-        # self.b.func()
-
-class B():
-    def __init__(self, pos):
-        self.pos = pos
-
-    def func(self):
-        self.pos += 1
-        print("B: ", self.pos)
-
-class C():
-    def __init__(self):
-        self.a = A0)
-        # self.a.func()
-
-    def run(self, idx):
-        self.a.func0()
-
-        if idx == 3:
-            self.a.func()
-
-        if self.a.b != 0:
-            self.a.b.func()
-
-        if idx == 7:
-            del self.a.b
-
-if __name__ == "__main__":
-
-    c = C()
-    for idx in range(10):
-        c.run(idx)
 
 
 
