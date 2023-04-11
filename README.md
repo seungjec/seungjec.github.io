@@ -56,5 +56,30 @@ git pull
 
 
 
+SDL 사용방법
+Microsoft Visual Studio Community 2022 기준
+1. SDL 다운로드 (https://github.com/libsdl-org/SDL/releases/tag/release-2.26.5)
+   SDL2-devel-2.26.5-VC.zip  (VScode 사용시 SDL2-devel-2.26.5-mingw.zip)
+   적당한 위치에 압축 해제 (프로젝트 폴더와 같을 필요 없음)
+2. Visual Studio에서 C++ 빈 프로젝트 생성
+3. 소스 파일에 cpp 파일 생성
+4. 프로젝트 속성
+  - VC++ 디렉터리
+    . 포함 디렉터리 : ~\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include
+    . 라이브러리 디렉터리 : ~\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64 (필요에 따라 x86 선택)
+  - 링커
+    . 입력 > 추가 종속성 : SDL2.lib;SDL2main.lib;
+      (또는 code 상단에 아래 두줄 입력)
+        #pragma comment(lib, "SDL2.lib")
+        #pragma comment(lib, "SDL2main.lib")
+    . 시스템 > 하위 시스템 : 창(/SUBSYSTEM:WINDOWS)   <- 프로그램 실행시 콘솔 창 안나오게 하기 위함
+5. 출력 파일 위치에 SDL2.dll 파일 넣기
+
+
+테스트 코드
+https://lazyfoo.net/tutorials/SDL/01_hello_SDL/index2.php
+
+
+
 
 
