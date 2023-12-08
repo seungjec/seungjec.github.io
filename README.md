@@ -86,5 +86,25 @@ https://www.youtube.com/watch?v=EAMHQfCGymg
 https://www.youtube.com/@codergopher8270
 
 
+# C++ 메모리 크기 확인하는 방법
+~~~c++
+#include <stdio.h>
+#include <stdlib.h>
 
+
+int func(int* arr)
+{
+    int array_size = _msize(arr);
+    return array_size;
+}
+
+int main()
+{
+    int* arr = (int*)malloc(10 * sizeof(int));
+    int array_size = func(arr);
+    printf("Array Size : %d\n", array_size);
+
+    return 0;
+}
+~~~
 
