@@ -1,5 +1,5 @@
 ---
-layout: default
+
 ---
 
 ## 소개
