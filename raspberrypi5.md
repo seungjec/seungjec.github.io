@@ -1,6 +1,6 @@
 ## 라즈베리파이 5 설치, 그리고 느낀점
 
-2023년 12월, 라즈베리파이 5는 내 책상의 first com이 되었다.
+2023년 12월, 라즈베리파이 5는 내 책상의 first com이 되었다.  
 라즈베리파이 3/4가 가끔씩 사용하는 용도였다면, 라즈베리파이 5는 데스크탑 역할을 충분히 해준다.
 
 그래서 라즈베리파이 5의 설치 및 설정 내용을 기록해둔다.
@@ -28,7 +28,7 @@
 4. HDMI 4K 60Hz 설정과 WIFI 간섭  
    이전 라즈베리파이와 달리, 별도 설정없이 HDMI 4K 60Hz 설정이 가능하다.  
    (모니터와 HDMI 케이블 사양 만족시)  
-   하지만 내 경우에 HDMI 4K 60Hz 설정시 인터넷이 안되는 문제가 발생했다.
+   하지만 내 경우에 HDMI 4K 60Hz 설정시 인터넷이 안되는 문제가 발생했다.  
    구글링 결과, HDMI와 WIFI의 간섭으로 발생할 수 있으며, HDMI 케이블 교체로 해결될 수 있다고 한다.
    나는 공유기의 WIFI 주파수를 2.4GHz에서 5GHz로 변경해서 간섭을 피했다.
 
@@ -42,10 +42,12 @@
         at 67.5°C, the fan speed increases to a high speed (70% speed)
         at 75°C the fan increases to full speed (100% speed)
 
-    The same mapping of temperature ranges to fan speeds applies to temperature decreases as well, with a 5°C hysteresis; fan speed decreases when the temperature drops to 5°C below each of the above thresholds.
+    The same mapping of temperature ranges to fan speeds applies to temperature decreases 
+    as well, with a 5°C hysteresis; fan speed decreases when the temperature drops to 5°C
+    below each of the above thresholds.
     ```
-    출처 : https://www.raspberrypi.com/documentation/computers/raspberry-pi-5.html#cooling-raspberry-pi-5  
-    참고 : https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/  
+    출처 : [https://www.raspberrypi.com/documentation/computers/raspberry-pi-5.html#cooling-raspberry-pi-5](https://www.raspberrypi.com/documentation/computers/raspberry-pi-5.html#cooling-raspberry-pi-5)  
+    참고 : [https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/](https://www.raspberrypi.com/news/heating-and-cooling-raspberry-pi-5/)  
 
 6. 전원 비교  
    라즈베리파이 5의 전원 요구사양은 5V, 5A 이다. 하지만 한국에는 정품 어뎁터가 아직 출시하지 않았다. (23년 12월 말 기준)  
