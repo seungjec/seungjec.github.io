@@ -1,6 +1,4 @@
----
-layout: default
----  
+... 
 
 ## 소개
 안녕하세요. 만나서 반갑습니다.  
@@ -11,7 +9,7 @@ layout: default
 1. [Raspberry Pi](./raspberrypi5.md)
 2. Visual Studio Code
 3. Git / Github
-4. SDL(Simple DirectMedia Layer)
+4. [SDL(Simple DirectMedia Layer)](./sdl_setup.md)
 5. Markdown
 
 
