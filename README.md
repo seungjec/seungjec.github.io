@@ -12,16 +12,3 @@
 4. [SDL(Simple DirectMedia Layer)](./sdl_setup.md)
 5. Markdown
 
-
-#### 이번 주말에 한 것
-
-- 프로그래밍 개발 환경  
-  . Visual Studio Code 설정 : 터미널 글씨 출력 오류  
-  . SDL 개발환경 구축 및 테스트  
-  . Git SSH 연동  
-  . vim-gui-common 설치  
-
-#### 이전 항목
-
-
-
